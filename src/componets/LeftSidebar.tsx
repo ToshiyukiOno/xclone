@@ -7,6 +7,7 @@ import { FaFeather, FaRegUser, FaXTwitter } from 'react-icons/fa6'
 import { GoHomeFill } from 'react-icons/go'
 import { IoSearchOutline } from 'react-icons/io5'
 import { TbDotsCircleHorizontal } from 'react-icons/tb'
+import { HiDotsHorizontal } from 'react-icons/hi'
 
 export default function LeftSidebar() {
   return (
@@ -83,6 +84,12 @@ export default function LeftSidebar() {
        <div className="mt-10 text-white flex justify-between items-center">
             <div className="flex items-center gap-2">
                 <Image src="/images/profile.jpg" alt="profile-pic" width={500} height={500} className="w-10 h-10 object-cover rounded-full"/>
+
+                 <div className="hidden lg:block">
+                     <p className="font-semibold">Test Name</p>
+                     <p className="text-secondary-text font-light">@Test Name</p>
+                </div>
+                <HiDotsHorizontal className="hidden lg:block" />
             </div>
         </div>
     </aside>
